@@ -1,1 +1,1 @@
-web: vertx run src/main/java/io/vertx/blog/first/MyFirstVerticle.java
+worker: vertx run src/main/java/io/vertx/blog/first/MyFirstVerticle.java
