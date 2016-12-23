@@ -1,1 +1,1 @@
-web: vertx run server.js
+web: vertx run src/main/java/io/vertx/blog/first/MyFirstVerticle.java
