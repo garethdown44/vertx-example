@@ -12,15 +12,15 @@ public class MyFirstVerticle extends AbstractVerticle {
     vertx
         .createHttpServer()
         .requestHandler(r -> {
-          r.response().end("<h1>Hello from my first " +
-              "Vert.x 3 application</h1>");
+            r.response().end("<h1>Hello from my first " +
+                    "Vert.x 3 application</h1>");
         })
-        .listen(port, result -> {
-          if (result.succeeded()) {
-            fut.complete();
-          } else {
-            fut.fail(result.cause());
-          }
+        .listen(Integer.valueOf(port), result -> {
+            if (result.succeeded()) {
+                fut.complete();
+            } else {
+                fut.fail(result.cause());
+            }
         });
   }
 }
